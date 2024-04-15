@@ -6,13 +6,13 @@ Collectively, the code produces a clean area-level 1940 census data set with soc
 Data citation: to be added!
 
 File descriptions:
-- 01_data_cleaning.R -- This script imports the full count 1940 IPUMS census data set, cleans and formats all variables (where needed), and creates a race variable. Then, I create data subsets: a household-level data set, individual-level data for people 16+, 14+, and 25+ , and everyone.
+- 01_data_cleaning.R -- This script imports the full count 1940 IPUMS census data set, cleans and formats all variables (where needed), and creates a race variable. Then, I create data subsets: a household-level data set, individual-level data for the population 16+ years old, 14+ years old, 25+ years old, and all ages.
   
-- 02_pop_hh_counts.R -- This R script creates population totals at the enumeration district, metro area, and county-level (1) overall and (2) by race. It also creates household counts at the enumeration district, metro area, and county-level
+- 02_pop_hh_counts.R -- This R script constructs population totals at the enumeration district, metro area, and county-level (1) overall and (2) by race. It also creates household counts at the enumeration district, metro area, and county-level
   
 - 03_area_level_hh_vars.R -- This script derives household-level social measures summarized at the enumeration district (first portion) and county-level (second portion). The measures include: proportion owned/rented/neither, home value, and rent (1) overall and (2) by race. I also derive some race-specific counts for ICE measures later on.
   
-- 04_ed_level_indiv_vars.R -- This script is similar to script 3 (above), except I am deriving individual-level variables summarized at the enumeration district-level only. The measures include: indicators of education (among population 25+) and employment and wages (among 14+ and 16+ populations), each overall and by race.
+- 04_ed_level_indiv_vars.R -- This script is similar to script 3 (above), except it derives individual-level variables summarized at the enumeration district-level only. The measures include: indicators of education (among population 25+) and employment and wages (among 14+ and 16+ populations), each overall and by race.
   
 - 05_cnty_level_indiv_vars.R --  This script derives the same indicators described above but at the county-level rather than the ed-level.
   
