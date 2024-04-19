@@ -3,7 +3,8 @@ This repository includes all of the necessary code to create 1940 area-level soc
 
 Collectively, the code produces a clean area-level 1940 census data set with social indicators (e.g., area-level education) and common measures of segregation, including the dissimilarity index and three ICE measures. With a few exceptions, the indicators are constructed at the county, metropolitan, and enumeration district level. Finally, area-level social factors are constructed (1) overall and (2) race-stratified for Black and White US populations.
 
-Data citation: to be added!
+Data citation: 
+Steven Ruggles, Matt A. Nelson, Matthew Sobek, Catherine A. Fitch, Ronald Goeken, J. David Hacker, Evan Roberts, and J. Robert Warren. IPUMS Ancestry Full Count Data: Version 4.0 [usa_00023.xml]. Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D014.V4.0
 
 File descriptions:
 - 01_data_cleaning.R -- This script imports the full count 1940 IPUMS census data set, cleans and formats all variables (where needed), and creates a race variable. Then, I create data subsets: a household-level data set, individual-level data for the population 16+ years old, 14+ years old, 25+ years old, and all ages.
